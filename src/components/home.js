@@ -13,6 +13,7 @@ import laptop from '../gif/laptop.gif'
 import kylo from '../gif/kylo.png'
 import vracademi from '../gif/vracademi.png'
 import { useRef } from "react"
+import { Link } from "react-router-dom"
 
 const Home = () =>{
     const gamesref = useRef(null)
@@ -35,17 +36,17 @@ const Home = () =>{
                     <div className="column1">
                         <div className="info">
                             <img className='infoimg' src={info}></img>
-                            <p>In July, 2022, my games were taken off from the Google Play Store due to an unprecedented change in Google's policy. Sucks, I know.</p>
+                            <p>In July, 2022, my games were unexpectedly removed from the Google Play Store owing to a change in Google's policy. It's sad, I know.</p>
                         </div>
                         <div className="gamebox">
                                 <img src={move}></img>
                                 <p>Move the sphere. Simple. Or is it? A hypercasual title that challenges your brain to work through the seemingly easy task of moving a ball through a procedurally generated path.<br/><strong>Unity, C#, GIMP</strong></p>
-                                <img className='download' src={download}></img>
+                                <a href="https://drive.google.com/file/d/15JLLLP93uDSW0vT6U6rfFEApiYhtt5FA/view?usp=sharing"><img className='download' src={download}></img></a>
                         </div>
                         <div className="gamebox">
                                 <img src={pedal}></img>
                                 <p>All about you and your bike traversing landscapes in an undending journey. Sit back and relax as you explore the side-scrolling open world on your trusty red bike. Make sure to befriend smiling faces, and stock up on supplies for the long journey ahead.  <br/> <strong>Unity, C#, GIMP</strong></p>   
-                                <img className='download' src={download}></img>
+                                <a href="https://drive.google.com/file/d/137kmPWcinNPVwMiwh9amE3lSZ_0euOSe/view?usp=sharing"><img className='download' src={download}></img></a>
                         </div>
                     </div>
                     <div className="column2">
@@ -54,8 +55,8 @@ const Home = () =>{
                 </div>
                 <div className="project" ref={projectsref}>
                     <div className="column1">
-                        <h1>Here's where I am <strong>headed</strong></h1>
-                        <h2>..and have been to</h2>
+                        <h1>Here's what I<strong>do</strong></h1>
+                        <h2>..and have done</h2>
                         <img src={car}></img>
                     </div>
                     <div className="column2">
