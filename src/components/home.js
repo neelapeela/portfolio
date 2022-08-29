@@ -31,7 +31,7 @@ const Home = () =>{
                         <img src={me}></img>
                     </div>
                 </div>
-                <div className="games" ref={gamesref}>
+                <div id='games' className="games" ref={gamesref}>
                     <div className="column1">
                         <div className="info">
                             <img className='infoimg' src={info}></img>
